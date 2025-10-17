@@ -27,7 +27,7 @@ main{
 }
 .sombra{
     position: absolute;
-    font-size: 500px;
+    font-size: 26vw;
     color: #ffffff55;
     z-index: -999;
     top: 50%;
@@ -47,11 +47,11 @@ h1{
     align-items: center;
     flex-grow: 1;
     color: white;
-    font-size: 300px;
+    font-size: 20vw;
 
 }
 .container{
-    height: 154px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     padding-bottom: 64px;
@@ -84,50 +84,40 @@ a{
     transform: translate(-50%, -50%);
 }
 
-@media (max-width: 600px) {
+/* TABLET */
+@media (max-width: 768px) {
     body {
-        padding: 16px;
+        padding: 30px;
     }
-    header span {
-        font-size: 20px;
+    .sombra {
+        transform: translate(-50%, -180%);
     }
-    h1 {
-        font-size: 80px;
+    main{
+        justify-content: space-between;
+    }
+    h1{
+        align-items: start; 
+        transform: translateY(30%);
+        flex-grow: 0;
+    }
+    footer {
+        display: none;
     }
     .container {
         flex-direction: column;
+        align-items: center;
         height: auto;
-        padding-bottom: 24px;
-        gap: 24px;
-        align-items: stretch;
-    }
-    .descricao h2 {
-        font-size: 32px;
-    }
+        padding: 0%;
+        gap: 15px;
+        transform: translateY(10%);
+    }  
     .descricao p {
-        font-size: 16px;
-        width: 100%;
+        text-align: center;
     }
-    a {
-        width: 100%;
-        height: 56px;
-        font-size: 24px;
-    }
-    .sombra {
-        font-size: 180px;
-        transform: translate(-50%, -60%);
-    }
-    .pikachu {
-        width: 90vw;
-        max-width: 320px;
-        height: auto;
-        position: static;
-        transform: none;
-        margin: 0 auto 16px auto;
-        display: block;
-    }
-    main {
-        padding: 0;
-    }
+}
+/* MOBILE */
+@media (max-width: 480px){
+
+
 }
 
