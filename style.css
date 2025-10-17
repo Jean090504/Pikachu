@@ -116,7 +116,7 @@ a{
     }
 }
 /* MOBILE */
-@media (max-width: 375px){
+@media (max-width: 480px){
     .descricao p{
         display: none;
     }
@@ -128,11 +128,6 @@ a{
     }
     .sombra{
         transform: translate(-50%, -230%);
-    }
-        h1{
-        align-items: start; 
-        transform: translateY(30%);
-        flex-grow: 0;
     }
     .container a{
         width: 100%;;
